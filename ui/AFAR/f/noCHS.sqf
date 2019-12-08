@@ -1,0 +1,1 @@
+params["_display","_dik"];_block=false;if(_dik in(actionKeys"nextChannel"+actionKeys"prevChannel"))then{_block=true;titleText["Use the radio interface (DIARY Keybind) to cycle through channels","PLAIN"];titleFadeOut 6};_block 
