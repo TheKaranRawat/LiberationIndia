@@ -1,0 +1,52 @@
+respawn = 3;
+respawndelay = 5;
+respawnButton = 1;
+disabledAI = true;
+
+enableDebugConsole = 1;
+allowFunctionsLog = 0;
+unsafeCVL = 1;
+
+briefingName = $STR_MISSION_TITLE;
+overviewText = "www.21stJSAT.com";
+overviewPicture = "res\iaf.jpg";
+author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer, [JSAT]Lt. Karan";
+onLoadName = $STR_MISSION_TITLE;
+onLoadMission = "www.21stJSAT.com";
+loadScreen = "res\iaf.jpg";
+
+joinUnassigned = 1;
+
+corpseManagerMode = 1;
+corpseLimit = 20;
+corpseRemovalMinTime = 600;
+corpseRemovalMaxTime = 3600;
+wreckManagerMode = 1;
+wreckLimit = 20;
+wreckRemovalMinTime = 600;
+wreckRemovalMaxTime = 2200;
+minPlayerDistance = 1000;
+
+#include "GREUH\UI\GREUH_interface.hpp"
+#include "ui\liberation_interface.hpp"
+#include "ui\liberation_notifications.hpp"
+#include "ui\mission_params.hpp"
+
+#include "AFAR\UI\defines.hpp"
+#include "AFAR\UI\dialogs.hpp"
+
+class CfgFunctions {
+	#include "AIS\cfgFunctions.hpp"
+};
+#include "AIS\Effects\BarDlg.hpp"
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title =	$STR_SORRY;
+		subtitle = "";
+		description = $STR_COMMANDER_NOT_AUTHORIZED;
+		pictureBackground = "";
+	};
+};
